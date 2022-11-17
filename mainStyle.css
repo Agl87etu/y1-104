@@ -8,7 +8,10 @@ body,
 p,
 h1,
 h2,
-ul {
+ul,
+hr,
+tr,
+td {
   padding: 0;
   margin: 0;
 }
@@ -42,9 +45,11 @@ h2 {
 p,
 li,
 label,
-a {
+a,
+em,
+tr {
   font-family: "Avenir Next", sans-serif;
-  font-size: 0.8em;
+  font-size: 0.9em;
   color: #ffffff;
 }
 
@@ -58,6 +63,33 @@ a {
 
 a:hover {
   color: #ffffff;
+}
+
+em {
+    font-style: italic;
+}
+
+strong {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+q {
+    font-style: italic;
+    padding: 25px;
+    margin: 25px;
+    color: #e91e63;
+}
+
+q::before,
+q::after {
+    content: '~';
+    font-size: 1.5em;
+    color: #ffffff;
+}
+
+hr {
+    border: 1px solid #ffffff;
 }
 
 .link-button {
@@ -201,7 +233,6 @@ footer #copyright-box p {
 
 /** Main block **/
 #main-box {
-  margin-top: 25px;
   margin-bottom: 25px;
 }
 
@@ -340,3 +371,165 @@ footer #copyright-box p {
 }
 
 /** Page of articles **/
+#article-selection-section ul {
+    text-align: center;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+}
+
+#article-selection-section ul li {
+    display: inline-block;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+#article-selection-section ul li a {
+    display: block;
+    padding: 25px;
+    text-decoration: none;
+    transition: all 0.5s ease-in;
+    background: linear-gradient(to top, transparent 50%, #e91e63 50%) bottom;
+    background-size: 250% 250%;
+    color: #ffffff;
+    font-size: 1em;
+}
+
+#article-selection-section ul li a:hover {
+    background-position: top;
+}
+
+#articles-section .article-navigation ol {
+    list-style-type: upper-roman;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 450px;
+}
+
+#articles-section .article-navigation ol li {
+    margin-bottom: 10px;
+    padding-left: 15px;
+}
+
+#articles-section .article-navigation ol li a {
+    text-underline-offset: 2px;
+}
+
+#articles-section .summary-box {
+    margin: 50px auto;
+    max-width: 50vw;
+    line-height: 1.5;
+}
+
+#articles-section .summary-box::before,
+#articles-section .summary-box::after {
+    color: #e91e63;
+    font-size: 1.5em;
+}
+
+#articles-section .summary-box::before {
+    content: '~';
+}
+
+#articles-section .summary-box::after {
+    content: '~';
+}
+
+#articles-section .article-p-box {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+#articles-section article {
+    background: #212121;
+    text-align: justify;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#articles-section article p {
+    max-width: 65vw;
+    margin: 15px auto;
+}
+
+#articles-section article:nth-child(2n) {
+    background: #000a12;
+}
+
+#articles-section .title-box h1 {
+    max-width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#articles-section .article-p-box h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+#articles-section .read-article-box {
+    text-align: center;
+}
+
+#articles-section .read-article-box p {
+    font-weight: bold;
+    border-top: 1px solid #e91e63;
+    border-bottom: 1px solid #e91e63;
+    padding: 25px;
+}
+
+#articles-section .citation-box {
+    width: 65vw;
+    margin: 45px auto;
+    text-align: right;
+    border-top: 2px solid #e91e63;
+    padding-top: 10px;
+}
+
+#articles-section .citation-box p {
+    margin-bottom: 25px;
+}
+
+#articles-section .article-p-box .article-it-imp {
+    text-align: center;
+    width: 50vw;
+    margin: 0 auto 50px;
+    display: block;
+}
+
+#webographie-box {
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+#webographie-box table {
+    margin: 15px auto;
+    border: 1px solid #ffffff;
+    border-collapse: collapse;
+}
+
+#webographie-box table thead tr th {
+    padding: 10px;
+    margin: 25px;
+    background: #212121;
+    color: #ffffff;
+}
+
+#webographie-box table tbody tr,
+#webographie-box table tbody tr td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 0.85em;
+}
+
+#webographie-box table tbody tr td {
+    width: 250px;
+}
+
+#webographie-box table tbody tr td a {
+    text-decoration: none;
+}
