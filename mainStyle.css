@@ -20,7 +20,11 @@ body {
   background: #000a12;
 }
 
-/** Default texts styles **/
+/**
+*
+* Default HTML tags styles
+*
+*/
 h1,
 h2 {
   font-family: "Futura", sans-serif;
@@ -65,7 +69,8 @@ a:hover {
   color: #ffffff;
 }
 
-em {
+em,
+q {
     font-style: italic;
 }
 
@@ -75,7 +80,6 @@ strong {
 }
 
 q {
-    font-style: italic;
     padding: 25px;
     margin: 25px;
     color: #e91e63;
@@ -92,6 +96,11 @@ hr {
     border: 1px solid #ffffff;
 }
 
+/**
+*
+* Generic classes
+*
+*/
 .link-button {
   border: 1px solid #e91e63;
   padding: 15px;
@@ -436,11 +445,8 @@ footer #copyright-box p {
     font-size: 1.5em;
 }
 
-#articles-section .summary-box::before {
-    content: '~';
-}
-
-#articles-section .summary-box::after {
+#articles-section .summary-box::before,
+#articles-section .summary-box::after{
     content: '~';
 }
 
