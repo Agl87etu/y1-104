@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire pour plus d'informations sur Youlead</title>
+    <link rel="icon" type="image/x-icon" href="../Resources/Medias/Icon.png">
+    <link href="../Resources/Style/Style.css" rel="stylesheet">
+</head>
+<body>
+<header>
+    <!-- #title-box : left ; #logo-box : centered ; nav : right -->
+    <div id="title-box">
+        <h1>Aymeric Léger</h1>
+    </div>
+    <div id="logo-box">
+        <img src="../Resources/Medias/Icon.png" alt="Logo du blog">
+    </div>
+    <nav id="main-navigation-box">
+        <ul>
+            <li><a href="../Index.html">Accueil</a></li>
+            <li><a href="Articles.html">Articles</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<!-- Main block -->
+<div id="main-box-contact">
+    <section id="form-box">
+        <div class="title-box">
+            <h1>Formulaire de contact</h1>
+        </div>
+        <div class="content-box">
+            <form method="post">
+                <label for="last_name">Nom :</label>
+                <input id="last_name" name="last_name" placeholder="Mon nom" type="text">
+                <br>
+                <label for="first_name">Prénom :</label>
+                <input id="first_name" name="first_name" placeholder="Mon prénom" type="text">
+                <br>
+                <label for="email_response">Email :</label>
+                <input id="email_response" name="email_response" placeholder="Mon adresse Mail" type="email">
+                <br>
+                <label for="message_content">Mon message :</label>
+                <textarea cols="50" id="message_content" name="message_content" placeholder="Donnez le plus d'informations possible pour que nous puissions correctement vous renseigner"
+                          rows="15"></textarea>
+                <br>
+                <input class="valid-button" id="send_email" name="send_email" type="submit" value="Envoyer">
+            </form>
+        </div>
+    </section>
+</div>
+<section id="alternative-contact-box">
+    <div id="support-icon">
+        <img src="../Resources/Medias/EmailSupport.png" alt="Icône sous forme de lettre Mail, pour le support">
+    </div>
+    <div class="title-box">
+        <h1>Méthode alternative</h1>
+    </div>
+    <div class="content-box">
+        <p>Vous pouvez également nous envoyer un mail en cliquant directement sur le bouton ci-dessous !</p>
+        <a class="link-button" href="mailto:aymeric.leger@etu.unilim.fr">Ouvrir ma messagerie</a>
+    </div>
+</section>
+<!-- Footer: contains the copyright and contact link and the official website of Youlead -->
+<footer>
+    <div id="links-box">
+        <ul>
+            <li>Informations utiles</li>
+            <li><a href="Contact.html">Formulaire de contact</a></li>
+            <li><a href="https://youlead.fr/" target="_blank">Site officiel Youlead</a></li>
+        </ul>
+    </div>
+    <div id="copyright-box">
+        <p>Les images et vidéos et sont les propriétés de leur créateur ou détenteur. Les images sans mentions sont la propriété de Aymeric Léger.</p>
+        <p>Site fait avec <strong>&#x2665</strong> par Aymeric Léger.</p>
+        <p>Copyright ©, tous les droits sont réservés à Aymeric Léger.</p>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,2 +1,5 @@
 # IDEA or editor
 .idea/
+
+# MacOS system
+.DS_Store
