@@ -4,6 +4,7 @@
 * Limoges University - CVTIC.
 *
 **/
+
 body,
 p,
 h1,
@@ -174,9 +175,8 @@ header #title-box {
 
 header #title-box h1 {
     font-size: 2.5em;
-    font-family: Comic Sans MS, Comic Sans, cursive;
     margin-top: 15px;
-    color: #ffffff;
+    font-weight: lighter;
 }
 
 header #main-navigation-box {
